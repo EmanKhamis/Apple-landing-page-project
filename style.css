@@ -37,7 +37,7 @@ ul li a{
     overflow: hidden;
 }
 .content .text{
-    width: 40%;
+    width: 50%;
     color: white;
 }
 .content .text h2{
@@ -74,4 +74,20 @@ ul li a{
 }
 .icons img:hover{
     transform: scale(1.2);
+}
+
+/* Media Query for mobile devices */
+@media only screen and (max-width: 600px) {
+    .content .iamge img {
+        width: 150px; /* Change the image width for screens smaller than 600 pixels */
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: flex-end; /* Move the phone icons to the right */
+        margin-top: 10px; /* Add some top margin for spacing */
+        margin-right: 20px; /* Additional margin to move the icons more to the right */
+    }
 }
